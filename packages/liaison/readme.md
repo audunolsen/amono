@@ -135,7 +135,7 @@ const res = await updateUsername.go({
 
 ### Composability
 
-As with the above example, if this is one of usage, that's fine, but if you need that exact same config it would be frustrating and repetitive to override at call time — every time. In this case it would be sensible to extend the `updateUserName` endpoint.
+As with the above example, if this is one-off usage, that's fine, but if you need that exact same config it would be frustrating and repetitive to override at call time — every time. In this case it would be sensible to extend the `updateUserName` endpoint.
 
 ```tsx
 replaceUsername = new Liaison(updateUsernae, (ext) => {
@@ -185,8 +185,8 @@ const getUser = new Liaison({
  * transform will be poperly typed as the extended insance's
  * types are all available in the config callback
  */
-const getUserPhoneNumber = new Liaison(getUser, ext => {
-  response: () => ext.transform(v => v.user.contactInfo.phoneNumber)
+const getUserPhoneNumber = new Liaison(getUser, config => {
+  response: () => config.response.transform(v => v.user.contactInfo.phoneNumber)
 })
 ```
 
