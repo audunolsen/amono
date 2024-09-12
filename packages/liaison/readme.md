@@ -291,7 +291,7 @@ The `instance.config`'s type is an accumulation of all instance extensions, so n
 
 ### Differences from fetch
 
-As stated previously, the goal of `Liaison` is to be a small fetch-wrapper that keeps as much of fetch's types, docs and lingo as is possible while still adressing its shortcomings. Types are used in a manner that preserves as mutch of Fetch's types and JSDoc as possible on Intellisense.
+As stated previously, the goal of `Liaison` is to be a small fetch-wrapper that keeps as much of fetch's types, docs and lingo as is possible while still adressing its shortcomings. Types are used in a manner that preserves as much of Fetch's types and JSDoc as possible on Intellisense.
 
 #### Only a single object-argument
 
