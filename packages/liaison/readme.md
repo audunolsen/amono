@@ -233,7 +233,7 @@ useEffect(() => {
     "request",
     async function addAuth(req) {
       const url = new URL(req.url)
-      url.searchParams.append("sessionId", "54134235")
+      url.searchParams.append("sessionId", authToken)
 
       return new Request(url, req)
     },
