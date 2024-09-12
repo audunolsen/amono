@@ -1,0 +1,20 @@
+{
+  "name": "@amono/alamode",
+  "version": "1.0.0",
+  "description": "Sane code-fomatting and linting",
+  "license": "UNLICENSED",
+  "sideEffects": false,
+  "type": "module",
+  "files": [
+    "prettier.config.js",
+    "index.js",
+    "utils/"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./prettier": "./prettier.config.js"
+  },
+  "devDependencies": {
+    "prettier": "3.3.2"
+  }
+}

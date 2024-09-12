@@ -1,0 +1,13 @@
+node_modules
+.npm
+npm-debug.log*
+.project
+.eslintcache
+.DS_Store
+misc
+dist
+debug.log
+*.tsbuildinfo
+ts-traces
+.vscode
+!/.vscode/extensions.json

@@ -1,0 +1,5 @@
+:root {
+  --breakpoint-small: 300;
+  --breakpoint-medium: 500;
+  --breakpoint-large: 700;
+}

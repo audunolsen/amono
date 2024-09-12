@@ -1,0 +1,40 @@
+{
+  "name": "@amono/outil",
+  "version": "0.0.1",
+  "description": "Generic typescript/javascript utilites",
+  "private": false,
+  "license": "UNLICENSED",
+  "sideEffects": false,
+  "type": "module",
+  "files": [
+    "/src",
+    "/dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./src/index.ts"
+    },
+    "./strings": {
+      "import": "./src/strings.ts"
+    },
+    "./types": {
+      "import": "./src/types.ts"
+    }
+  },
+  "scripts": {
+    "tc": "tsc --showConfig --project tsconfig.build.json",
+    "typecheck": "tsc --noEmit --incremental false --composite false",
+    "build:dts": "tsc --build tsconfig.build.json",
+    "build:lib": "vite build",
+    "build": "concurrently --raw 'npm run build:lib' 'npm run build:dts'"
+  },
+  "devDependencies": {
+    "vite": "5.3.3",
+    "concurrently": "8.2.2"
+  },
+  "dependencies": {
+    "hotscript": "1.0.13",
+    "ts-pattern": "5.2.0"
+  },
+  "peerDependencies": {}
+}

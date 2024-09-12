@@ -1,0 +1,33 @@
+{
+  "name": "@amono/liaison",
+  "version": "1.0.0",
+  "description": "Feature complete fetch wrapper",
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "tc": "tsc --showConfig",
+    "typecheck": "tsc --noEmit --incremental false --composite false",
+    "build:dts": "tsc --build tsconfig.build.json",
+    "build:lib": "vite build",
+    "build": "concurrently --raw 'npm run build:lib' 'npm run build:dts'"
+  },
+  "files": [
+    "src/",
+    "dist/"
+  ],
+  "exports": {
+    ".": {
+      "import": "./src/index.ts"
+    }
+  },
+  "devDependencies": {
+    "vite": "5.3.3"
+  },
+  "peerDependencies": {
+    "zod": ">=3"
+  },
+  "dependencies": {
+    "@amono/outil": "*"
+  }
+}
