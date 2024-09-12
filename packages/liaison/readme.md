@@ -53,7 +53,7 @@ the configuration stage and call time.
 
 ### 2. Co-location vs. Arbitrary Separation
 
-A successful API call is composed of many parts; url, types, headers, etc… A very established and unfortunate convention is to separates these, often through different placements in the file system, like `some-path/types.ts` and `some-other-path/constants/urls.ts`. This means that important components of an endpoint have to be found by trailing multiple very distinct paths in the project. This means that without sufficient domain knowledge, you will have trouble stitching together the relevant parts of an endpoint because related code is not kept together. Co-location by feature would allow for a lot more agency without any prior knowledge. While `fetch` itself is not opinionated about this, the goal is to make a fetch wrapper that easily facilitates co-location as a first class architectural choise.
+A successful API call is composed of many parts; url, types, headers, etc… An established and unfortunate convention is to separate these, often through different placements in the file system, like `some-path/types.ts` and `some-other-path/constants/urls.ts`. This means that important components of an endpoint have to be found by trailing multiple very distinct paths in the project. This means that without sufficient domain knowledge, you will have trouble stitching together the relevant parts of an endpoint because related code is not kept together. Co-location by feature would allow for a lot more agency without any prior knowledge. While `fetch` itself is not opinionated about this, the goal quickly became to make a fetch wrapper that easily facilitates co-location as a first class architectural choise.
 
 ### 3. Fetch is Not Feature Complete
 
