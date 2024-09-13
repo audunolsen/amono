@@ -191,7 +191,7 @@ const getUserPhoneNumber = new Liaison(getUser, config => {
 ```
 
 > [!TIP]
-> The generic type paramters uses the `const modifier` introduced in TypeScript 5.0, this means everything passed to an instance can be referenced by its most literal value, meaning `instance.config.url` will equete to a literal string, which is extremely handy when referncing values and inspecting types using intellisense.
+> The generic type paramters uses the [const modifier](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-0.html#const-type-parameters) introduced in TypeScript 5.0, this means everything passed to an instance can be referenced by its most literal value, meaning `instance.config.url` will equete to a literal string, which is extremely handy when referncing values and inspecting types using intellisense.
 
 ### Return value
 
